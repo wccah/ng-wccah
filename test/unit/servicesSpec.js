@@ -7,8 +7,8 @@ describe('service', function() {
 
 
   describe('tracker', function() {
-    it('should return current version', inject(function(version) {
-      expect(version).toEqual('0.1');
+    it('should return current version', inject(function(wccahTracker) {
+      expect(typeof wccahTracker).toEqual('function');
     }));
   });
 });

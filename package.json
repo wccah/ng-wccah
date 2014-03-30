@@ -3,6 +3,11 @@
   "description": "possibly useful libs for angular",
   "repository": "https://github.com/wccah/ng-wccah",
   "devDependencies": {
-    "jshint": "~2.4.4"
+    "jshint": "~2.4.4",
+    "phantomjs": "~1.9",
+    "karma" : "~0.10",
+    "karma-junit-reporter" : "~0.1",
+    "karma-jasmine" : "~0.1",
+    "protractor" : "~0.17.0"
   }
 }

@@ -1,7 +1,7 @@
 (function(angular){
 	'use strict';
 
-/* Services */
+	/* Services */
 	angular.module('wccah.services',[])
 	
 	/**
@@ -23,7 +23,8 @@
 	 *  instantiation, is tracked.
 	 *
 	 **/
-	.factory('wccahTracker', [function() {
+	.factory('wccahTracker', 
+	[function() {
 		var myTracker = function($scope, trackKeys) {
 			var self = this;
 			

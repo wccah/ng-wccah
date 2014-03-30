@@ -1,0 +1,8 @@
+{
+  "name": "ng-wccah",
+  "description": "possibly useful libs for angular",
+  "repository": "https://github.com/wccah/ng-wccah",
+  "devDependencies": {
+    "jshint": "~2.4.4"
+  }
+}

@@ -16,7 +16,6 @@
 	.directive('blockUi', function() {
 		return {
 			link: function($scope, element, attributes) {
-				debugger;
 				var ex = attributes.blockUi;
 				var val = $scope.$eval(ex);
 				if(!val){

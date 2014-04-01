@@ -7,7 +7,7 @@ module.exports = function(config){
       'app/lib/angular/angular-*.js',
       'test/lib/angular/angular-mocks.js',
       'app/js/**/*.js',
-      'test/unit/**/*.js'
+      'test/unit/*.js'
     ],
 
     exclude : [
@@ -20,18 +20,22 @@ module.exports = function(config){
 
     frameworks: ['jasmine'],
 
-    browsers : ['Chrome'],
+    browsers : ['Chrome', 'Firefox', 'PhantomJS'],
 
     plugins : [
-            'karma-junit-reporter',
+		    'karma-junit-reporter',
+            'karma-teamcity-reporter',
             'karma-chrome-launcher',
             'karma-firefox-launcher',
+            'karma-phantomjs-launcher',
             'karma-jasmine'
             ],
 
     junitReporter : {
       outputFile: 'test_out/unit.xml',
       suite: 'unit'
-    }
+    },
+    
+    singleRun: true
 
 })}

@@ -36,6 +36,6 @@ module.exports = function(config){
       suite: 'unit'
     },
     
-    singleRun: true
+    reporters: ['junit']
 
 })}
